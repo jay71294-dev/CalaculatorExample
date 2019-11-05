@@ -2,13 +2,19 @@ import math
 
 
 def addition(a,b):
-    return a+b
+    a=int(a)
+    b=int(b)
+    c=a+b
+    return int(c)
 
 def subtraction(a,b):
-    return a-b
+    a=int(a)
+    b=int(b)
+    c=b-a
+    return int(c)
 
 def multiplication(a,b):
-    return a*b
+    return int(a*b)
 
 def division(a,b):
     return a/b
@@ -26,7 +32,7 @@ class Calculator:
         pass
 
     def add(self,a,b):
-        self.result=addition(a,b)
+        self.result = addition(a,b)
         return self.result
 
     def subtract(self,a,b):
@@ -38,7 +44,7 @@ class Calculator:
         return self.result
 
     def div(self,a,b):
-        self.result=division(a,b)
+        self.result=division(b,a)
         return self.result
 
     def square(self,a):

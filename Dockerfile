@@ -1,7 +1,7 @@
-FROM python:3.7
+FROM python:3.8
 
 COPY . /web
 WORKDIR /web
 RUN pip install -r ./requirements.txt
 ENTRYPOINT ["python"]
-CMD [ "/web/Database/sqlite_create.py" ]
+CMD [ "/web/Database/sqljay.py" ]
